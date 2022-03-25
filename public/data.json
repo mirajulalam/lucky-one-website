@@ -1,72 +1,62 @@
 [
     {
-        "_id": "623ddaefecbb6db4cdb41bcc",
+        "id": "623ddaefecbb6db4cdb41bcc",
         "picture": "http://placehold.it/32x32",
         "price": 177,
-        "eyeColor": "brown",
         "name": "Chandler Lawrence"
     },
     {
-        "_id": "623ddaef2ef60286db706488",
+        "id": "623ddaef2ef60286db706488",
         "picture": "http://placehold.it/32x32",
         "price": 387,
-        "eyeColor": "green",
         "name": "Dejesus Maynard"
     },
     {
-        "_id": "623ddaef5a0024790890ceaf",
+        "id": "623ddaef5a0024790890ceaf",
         "picture": "http://placehold.it/32x32",
         "price": 180,
-        "eyeColor": "green",
         "name": "Schwartz Weaver"
     },
     {
-        "_id": "623ddaef43bc1329c6ef436b",
+        "id": "623ddaef43bc1329c6ef436b",
         "picture": "http://placehold.it/32x32",
         "price": 563,
-        "eyeColor": "brown",
         "name": "Atkinson Morin"
     },
     {
-        "_id": "623ddaefedada7819ba5ac09",
+        "id": "623ddaefedada7819ba5ac09",
         "picture": "http://placehold.it/32x32",
         "price": 553,
-        "eyeColor": "blue",
         "name": "Alba Sears"
     },
     {
-        "_id": "623ddaefb1936278aaca1a47",
+        "id": "623ddaefb1936278aaca1a47",
         "picture": "http://placehold.it/32x32",
         "price": 517,
-        "eyeColor": "green",
         "name": "Bernadette Tyson"
     },
     {
-        "_id": "623ddaef1ab1efe3b9ef1e5b",
+        "id": "623ddaef1ab1efe3b9ef1e5b",
         "picture": "http://placehold.it/32x32",
         "price": 215,
-        "eyeColor": "blue",
         "name": "Fran Gilmore"
     },
     {
-        "_id": "623ddaefba546dacd18f298f",
+        "id": "623ddaefba546dacd18f298f",
         "picture": "http://placehold.it/32x32",
         "price": 565,
-        "eyeColor": "blue",
         "name": "Noble Foley"
     },
     {
-        "_id": "623ddaef091efe8d17b96ac9",
+        "id": "623ddaef091efe8d17b96ac9",
         "picture": "http://placehold.it/32x32",
         "price": 459,
-        "eyeColor": "green",
         "name": "Brooke Melendez"
     },
     {
-        "_id": "623ddaef261882c9c012831c",
+        "id": "623ddaef261882c9c012831c",
         "picture": "http://placehold.it/32x32",
         "price": 30,
-        "eyeColor": "green",
         "name": "Jackson Sosa"
     }
 ]
