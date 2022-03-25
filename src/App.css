@@ -36,3 +36,10 @@
     transform: rotate(360deg);
   }
 }
+
+
+.header-title{
+  text-align: center;
+  color: deeppink;
+  font-size: 40px;
+}
