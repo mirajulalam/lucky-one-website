@@ -7,7 +7,7 @@ function App() {
     const [cart, setCart] = useState([]);
     const [random, setRandom] = useState([])
     const [cartOrder, setCartOrder] = useState([])
-    console.log(random)
+
 
     const handleAddtoCart = (product) => {
         const newCart = [...cartOrder, product]
