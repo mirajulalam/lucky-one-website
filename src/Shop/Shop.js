@@ -2,8 +2,9 @@ import React from 'react';
 import './Shop.css';
 import { BsFillCartFill } from 'react-icons/bs'
 const Shop = (props) => {
-    console.log(props.product)
+    const { product, handleAddtoCart } = props;
     const { name, picture, price } = props.product;
+
     return (
         <div>
             <div className="product">
@@ -13,7 +14,7 @@ const Shop = (props) => {
                     <h4>Price: ${price}</h4>
                 </div>
                 <div>
-                    <button className='btn-cart'>
+                    <button onClick={() => handleAddtoCart(product)} className='btn-cart'>
                         AddToCart <BsFillCartFill />
                     </button>
                 </div>
