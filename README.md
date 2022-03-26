@@ -1,6 +1,6 @@
 # lucky-one-mirajulalam
 
-live link open [https://kaleidoscopic-clafoutis-ea4b47.netlify.app/]
+
 
 # Getting Started with Create React App
 
