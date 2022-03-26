@@ -7,8 +7,8 @@ const Shop = (props) => {
 
     return (
 
-        <div id="product">
-            <div className='product-container'>
+        <>
+            <div style={{ position: 'relative', width: '300px', height: '400px', border: '1px solid gray', borderRadius: '8px' }}>
                 <div className="product-info">
                     <img src={picture} alt=""></img>
                     <h3>Name: {name}</h3>
@@ -19,7 +19,7 @@ const Shop = (props) => {
                     AddToCart <BsFillCartFill />
                 </button>
             </div>
-        </div>
+        </>
 
     );
 };
