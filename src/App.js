@@ -57,7 +57,7 @@ function App() {
                 </div>
             </div>
             <div>
-                <h1 className='Queation-title'>Ract Question</h1>
+                <h1 className='Queation-title'>React Question</h1>
                 <h2>Question No 1: How react work?</h2>
                 <p>React is a JavaScript library (not a framework) that creates user interfaces (UIs) in a predictable and efficient way using declarative code. You can use it to help build single page applications and mobile apps, or to build complex apps if you utilise it with other libraries.React does not commit state changes one after the other if there are multiple state changes. Instead, React goes through its virtual DOM ,creates a list of those changes that need to be made to the actual DOM and then does it all in one single process. In fancy words, React does batch updates.At its very core, React basically maintains a tree for you. This tree is able to do efficient diff computations on the nodes. Think of your HTML code as a tree. In fact, that is exactly how the browser treats your DOM (your rendered HTML on the browser).React Scenes is a simple way to create/test your react components inside your app. This commit does not belong to any branch on this repository, and may belong to a fork outside of the repository.</p>
                 <h2>Question No 2: Props vs state?</h2>
