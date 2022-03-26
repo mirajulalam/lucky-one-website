@@ -5,22 +5,20 @@ import { useState, useEffect } from 'react';
 
 function App() {
     const [cart, setCart] = useState([]);
-
-    console.log(cart)
+    const [random, setRandom] = useState([])
     const [cartOrder, setCartOrder] = useState([])
+    console.log(random)
+
     const handleAddtoCart = (product) => {
         const newCart = [...cartOrder, product]
         setCartOrder(newCart)
     }
-    // const handleResetCart = (product) => {
-    //     const newCarts = [...Carts,product]
-    //     setCarts(newCarts)
-    // }
-    const addtoRandom = (cart) => {
-        console.log(cart.id)
-        const output = Math.random(cart);
-        console.log(output)
+
+    const handleRandom = () => {
+        const random = cartOrder[Math.floor(Math.random() * cartOrder.length)]
+        setRandom(random)
     }
+    const handleClearCart = () => setCartOrder([]) || setRandom([]);
     useEffect(() => {
         fetch('data.json')
             .then(res => res.json())
@@ -30,7 +28,6 @@ function App() {
     return (
         <div>
             <h1 className='header-title'>Choice your favorite food</h1>
-
             <div className="card-info">
                 <div className="card-container">
                     {
@@ -42,17 +39,20 @@ function App() {
                     }
                 </div>
                 <div className="order-container">
-                    <h1>Selected food</h1>
-                    <div>
-                        {
-                            cartOrder.map(items => <Cart key={items.id} items={items} />)
-                        }
-                    </div>
-                    <button onClick={() => addtoRandom(cart)} className='btn-select'>Choce 1 for me</button>
-                    <br />
-                    <div>
-                        <button className='btn-select1'>Reset Again
-                        </button>
+                    <div className='order-info'>
+                        <h1>Selected food</h1>
+                        <div>
+                            {
+                                cartOrder.map(items => <Cart key={items.id} items={items} />)
+                            }
+                        </div>
+                        <h2>{random.name}</h2>
+                        <button onClick={handleRandom} className='btn-select'>Choce 1 for me</button>
+                        <br />
+                        <div>
+                            <button onClick={handleClearCart} className='btn-select1'>Reset Again
+                            </button>
+                        </div>
                     </div>
                 </div>
             </div>
