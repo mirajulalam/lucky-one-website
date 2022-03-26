@@ -5,8 +5,7 @@ const Cart = (props) => {
     return (
         <div>
             <h3>Name:{name}</h3>
-        </div>
-    );
+        </div>);
 };
 
 export default Cart;

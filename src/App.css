@@ -54,6 +54,9 @@
   gap: 45px;
 
 }
+
+
+
 .card-container img {
   width:100%;
 }
@@ -66,6 +69,7 @@
   border-radius: 5px;
   background-color: aqua;
   margin: 10px 0;
+  cursor: pointer;
 }
 .btn-select1{
   padding: 10px;
@@ -73,4 +77,23 @@
   border-radius: 5px;
   background-color: red;
   color: white;
+  cursor: pointer;
 }
+
+
+.Queation-title{
+  text-align: center;
+}
+
+
+@media (max-width:780px) {
+  .card-container{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+.card-info{
+  display:grid;
+  grid-template-columns: 1fr;
+}
+};
