@@ -1,5 +1,6 @@
 import './App.css';
 import Shop from './Shop/Shop';
+import Cart from './Cart/Cart'
 import { useState, useEffect } from 'react';
 
 function App() {
@@ -17,13 +18,7 @@ function App() {
     return (
         <div>
             <h1 className='header-title'>Choice your favorite food</h1>
-            <div>
-                {
-                    cartOrder.map(items => (<h1 key={items.id}>
-                        {items.name}
-                    </h1>))
-                }
-            </div>
+
             <div className="card-info">
                 <div className="card-container">
                     {
@@ -35,7 +30,15 @@ function App() {
                     }
                 </div>
                 <div className="order-container">
-                    <h1>order summary</h1>
+                    <h1>Selected food</h1>
+                    <div>
+                        {
+                            cartOrder.map(items => <Cart key={items.id} items={items} />)
+                        }
+                    </div>
+                    <button className='btn-select'>Choce 1 for me</button>
+                    <br />
+                    <button className='btn-select1'>Reset Again</button>
                 </div>
             </div>
         </div>

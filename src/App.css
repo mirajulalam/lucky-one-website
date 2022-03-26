@@ -46,13 +46,31 @@
 
 .card-info{
   display:grid;
-  grid-template-columns: 4fr 2fr;
+  grid-template-columns: 4fr 1fr;
 }
 .card-container{
   display: grid;
   grid-template-columns: repeat(3,1fr);
   gap: 45px;
+
 }
 .card-container img {
   width:100%;
+}
+.order-container{
+  margin-left: 20px;
+}
+.btn-select{
+  padding: 10px;
+  border: 1px solid gray;
+  border-radius: 5px;
+  background-color: aqua;
+  margin: 10px 0;
+}
+.btn-select1{
+  padding: 10px;
+  border: 1px solid gray;
+  border-radius: 5px;
+  background-color: red;
+  color: white;
 }
