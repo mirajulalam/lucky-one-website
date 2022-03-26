@@ -43,3 +43,16 @@
   color: deeppink;
   font-size: 40px;
 }
+
+.card-info{
+  display:grid;
+  grid-template-columns: 4fr 2fr;
+}
+.card-container{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: 45px;
+}
+.card-container img {
+  width:100%;
+}
